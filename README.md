@@ -1,24 +1,12 @@
 # Identicon
 
-**TODO: Add description**
+Generate [Identicons](https://en.wikipedia.org/wiki/Identicon) from Elixir.  Takes in a text string, hashes it and writes an identicon (in PNG) to the file system.
 
-## Installation
+## Usage
+```elixir
+Identicon.main("David Hasselhoff")
+```
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Results in the following `David Hasselhoff.png`:
 
-  1. Add `identicon` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:identicon, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `identicon` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:identicon]]
-    end
-    ```
-
+![David Hasselhoff.png](https://i.imgur.com/yxEqWLS.png)
